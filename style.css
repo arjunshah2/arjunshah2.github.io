@@ -130,6 +130,17 @@ summary:focus-visible {
   color: var(--accent);
 }
 
+.site-nav a[aria-current="page"] {
+  color: var(--ink);
+}
+
+.site-nav li a[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.4em;
+}
+
 .nav-name {
   font-weight: 600;
   white-space: nowrap;
@@ -164,6 +175,11 @@ h1 {
   line-height: 1.1;
   letter-spacing: -0.01em;
   text-wrap: balance;
+}
+
+.page-title {
+  margin: 3rem 0 1.75rem;
+  font-size: 2rem;
 }
 
 .role {
@@ -223,7 +239,7 @@ h2 {
   line-height: 1.2;
 }
 
-h3.group {
+.group {
   margin: 2.25rem 0 0.9rem;
   color: var(--muted);
   font-family: var(--sans);
@@ -233,7 +249,7 @@ h3.group {
   text-transform: uppercase;
 }
 
-h2 + h3.group {
+.page-title + .group {
   margin-top: 0;
 }
 
@@ -251,7 +267,7 @@ p {
   margin-bottom: 1.5rem;
 }
 
-.paper h4 {
+.paper h3 {
   margin: 0;
   font-size: 1.125rem;
   font-weight: 600;
@@ -270,7 +286,7 @@ p {
   background: var(--surface);
 }
 
-.paper.featured h4 {
+.paper.featured h3 {
   font-size: 1.3rem;
 }
 
@@ -426,12 +442,25 @@ address {
     font-size: 2rem;
   }
 
-  .nav-name {
-    display: none;
+  .page-title {
+    margin-top: 2.25rem;
+    font-size: 1.75rem;
+  }
+
+  .site-nav {
+    position: static;
   }
 
   .site-nav .wrap {
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+  }
+
+  .site-nav ul {
+    flex-wrap: wrap;
+    gap: 0.25rem 1.1rem;
   }
 
   .entries li {
