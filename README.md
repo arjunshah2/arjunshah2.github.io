@@ -1,4 +1,6 @@
-# Personal academic website
+# arjunshah2.github.io
+
+Source for Arjun Shah's academic website: <https://arjunshah2.github.io>.
 
 A single static page: `index.html` for content, `style.css` for looks. No build step.
 
@@ -10,9 +12,9 @@ python3 -m http.server 8000
 
 Then open <http://localhost:8000>.
 
-## Fill in your details
+## Edit
 
-Everything to replace is in `index.html`, written in `[square brackets]` or marked with an `<!-- EDIT -->` comment. To list what is left:
+Content still to fill in is in `index.html`, written in `[square brackets]` or marked with an `<!-- EDIT -->` comment. To list what is left:
 
 ```sh
 grep -n '\[[A-Za-z]' index.html
@@ -30,18 +32,14 @@ Files to add to `assets/`:
 
 Delete any link or section you do not need. To change the accent colour, edit `--accent` at the top of `style.css` (there is a second value for dark mode).
 
-## Publish on GitHub Pages
+## Publish
 
-1. Create a public repository named `YOUR_USERNAME.github.io` on GitHub (empty, no README).
-2. Push this folder to it:
+GitHub Pages serves the site from the root of `main`, so pushing is publishing:
 
-   ```sh
-   git add .
-   git commit -m "Initial site"
-   git remote add origin git@github.com:YOUR_USERNAME/YOUR_USERNAME.github.io.git
-   git push -u origin main
-   ```
+```sh
+git add .
+git commit -m "Describe the change"
+git push
+```
 
-3. In the repository, go to Settings → Pages and set the source to "Deploy from a branch", branch `main`, folder `/ (root)`.
-
-The site appears at `https://YOUR_USERNAME.github.io` within a minute or two. Every later push updates it.
+The live site updates within a minute or two.
