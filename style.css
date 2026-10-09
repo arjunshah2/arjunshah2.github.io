@@ -347,57 +347,10 @@ details p {
   margin-bottom: 0.35rem;
 }
 
-/* ---------- Teaching ---------- */
-
-.entries {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.entries li {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1.5rem;
-  padding: 0.55rem 0;
-  border-bottom: 1px solid var(--rule);
-}
-
-.entries li:first-child {
-  padding-top: 0;
-}
-
-.entry-side {
-  flex: none;
-  color: var(--muted);
-  font-family: var(--sans);
-  font-size: 0.875rem;
-  text-align: right;
-}
-
-.note {
-  margin: 1rem 0 0;
-  font-family: var(--sans);
-  font-size: 0.875rem;
-}
-
-/* ---------- References and contact ---------- */
+/* ---------- Contact ---------- */
 
 address {
   font-style: normal;
-}
-
-.refs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
-  gap: 1.5rem;
-  font-size: 0.975rem;
-  line-height: 1.5;
-}
-
-.refs a {
-  overflow-wrap: anywhere;
 }
 
 .contact {
@@ -461,15 +414,6 @@ address {
   .site-nav ul {
     flex-wrap: wrap;
     gap: 0.25rem 1.1rem;
-  }
-
-  .entries li {
-    flex-direction: column;
-    gap: 0.1rem;
-  }
-
-  .entry-side {
-    text-align: left;
   }
 
   .paper.featured {
