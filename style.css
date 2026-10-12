@@ -189,17 +189,6 @@ h1 {
   line-height: 1.45;
 }
 
-.market-note {
-  display: inline-block;
-  margin: 1.1rem 0 0;
-  padding: 0.3rem 0.7rem;
-  border-left: 3px solid var(--accent);
-  background: var(--surface);
-  font-family: var(--sans);
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
 .links {
   display: flex;
   flex-wrap: wrap;
